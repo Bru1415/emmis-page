@@ -61,24 +61,68 @@ header .navbar a:hover{
 }
 
 main {
-display: flex;
-justify-content: space-evenly;
-align-items: center;
-flex-flow: row wrap;
-background-color: #9254C8;
+
+background: linear-gradient(180deg,#6edcd8e1,#073288);
 min-height: 33vh;
 }
 
-main div{
+.favorites{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row wrap;
+}
 
-    min-width: 15%; 
+main .favorites div{
+
+    width: 15%; 
     height: auto;
     text-align: center;
     /* border: 1px solid green; */
 
 }
-main div img{
+main .favorites div img{
     object-fit: cover;
-
+border: 12px solid rgba(175, 70, 131, 0.603) ;
+border-radius: 10px;
 }
 
+main .favorites div img:hover{
+    transform: scale(1.1);
+}
+
+@media only screen and (max-width: 600px )  {
+
+header{
+    background-size: contain;
+    background-repeat: repeat;
+    height:90vh;
+}
+
+
+    main {
+/* justify-content: center; */
+    }
+
+    main .favorites div{
+    
+        /* transform: scale(0.8); */
+        /* width: 25px; */
+        /* margin: auto; */
+    }
+    .favorites{
+        width: 100%;
+        /* text-align: center; */
+        flex-direction: column;
+        /* align-items:center; */
+        max-height: 30vh;
+
+        
+    }
+    main .favorites div img{
+
+        max-width: 100px;
+
+    }
+   
+}
