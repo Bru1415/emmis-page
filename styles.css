@@ -11,7 +11,26 @@ header{
 justify-content: flex-end; */
 height: 100vh;
 
+
 } 
+
+.title{
+position: relative;
+top:20%;
+word-wrap: break-word;
+font-size: 2rem;
+border: 2px solid salmon;
+width: 80%;
+left:10%;
+text-align: center;
+padding: 1rem 0;;
+color: white;
+border-radius: 2px;
+animation: fire 2s infinite alternate-reverse forwards;
+}
+.logo{
+    text-align: left;
+}
 
 .logo img{
     position: relative;
@@ -71,6 +90,7 @@ min-height: 33vh;
     justify-content: space-evenly;
     align-items: center;
     flex-flow: row wrap;
+    padding-top: 2rem;
 }
 
 main .favorites div{
@@ -83,12 +103,32 @@ main .favorites div{
 }
 main .favorites div img{
     object-fit: cover;
-border: 12px solid rgba(175, 70, 131, 0.603) ;
-border-radius: 10px;
+border: 7px solid rgba(175, 70, 131, 0.603) ;
+border-radius: 5px;
 }
 
 main .favorites div img:hover{
     transform: scale(1.1);
+}
+
+@keyframes fire {
+    from{
+        background: linear-gradient(180deg, rgba(189, 58, 58, 0.548), rgba(255, 255, 0, 0.472));
+    }
+    33%{
+        background: linear-gradient(180deg, rgba(199, 55, 55, 0.486), rgba(224, 224, 16, 0.534));
+  
+    }
+    66%{
+        background: linear-gradient(180deg, rgba(202, 47, 47, 0.52), rgba(202, 202, 40, 0.466));
+
+    }
+    to{
+background: linear-gradient(180deg, rgba(221, 18, 18, 0.486), rgba(190, 190, 58, 0.466));
+
+    }
+
+    
 }
 
 @media only screen and (max-width: 600px )  {
@@ -96,7 +136,7 @@ main .favorites div img:hover{
 header{
     background-size: contain;
     background-repeat: repeat;
-    height:90vh;
+    height:48vh;
 }
 
 
@@ -115,7 +155,7 @@ header{
         /* text-align: center; */
         flex-direction: column;
         /* align-items:center; */
-        max-height: 30vh;
+        max-height: 40vh;
 
         
     }
