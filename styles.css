@@ -131,12 +131,12 @@ background: linear-gradient(180deg, rgba(221, 18, 18, 0.486), rgba(190, 190, 58,
     
 }
 
-@media only screen and (max-width: 600px )  {
+@media only screen and (max-width: 660px )  {
 
 header{
     background-size: contain;
     background-repeat: repeat;
-    height:48vh;
+    /* height:48vh; */
 }
 
 
