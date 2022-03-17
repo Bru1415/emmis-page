@@ -91,10 +91,11 @@ header .navbar a:hover{
 }
 
 .hamster-clipart img{
-    width: 4%;
+    width: 5%;
     align-self: flex-end;
     position: relative;
     animation: moving-hamster 6s ease-out infinite forwards;
+    border-radius: 50%;
 
 }
 
