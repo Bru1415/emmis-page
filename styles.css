@@ -90,13 +90,41 @@ header .navbar a:hover{
     
 }
 
-.hamster-clipart img{
+#small-hamster{
     width: 5%;
     align-self: flex-end;
     position: relative;
-    animation: moving-hamster 6s ease-out infinite forwards;
     border-radius: 50%;
 
+}
+
+.just-move{
+
+    animation: moving-hamster 6s ease-out infinite forwards;
+
+
+}
+
+.jump{
+
+    animation: moving-hamster 6s ease-out infinite forwards, jump 1s ease-out 1 forwards;
+
+}
+
+.hamster-jump{
+    position: relative;
+top: 50%;
+
+}
+
+#jump{
+
+    display: block;
+    margin-left: auto;
+    margin-right: 2rem;
+    font-size: 1.5rem;
+    background-color: cadetblue;
+    color: wheat;
 }
 
 main {
@@ -129,6 +157,23 @@ border-radius: 5px;
 
 main .favorites div img:hover{
     transform: scale(1.1);
+}
+
+@keyframes jump{
+
+    0%{
+bottom:0;
+}
+
+50%{
+    bottom:20%;
+
+}
+
+100%{
+    bottom:0;
+
+}
 }
 
 @keyframes fire {
@@ -197,4 +242,10 @@ header{
 
     }
    
+
+    .hamster-clipart{
+
+        width: 8%;
+    }
+
 }
